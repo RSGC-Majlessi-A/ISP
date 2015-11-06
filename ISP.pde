@@ -3,7 +3,7 @@ float y=500;
 
 void setup(){
   size(1000,1000);
-  
+  frameRate(1000);
   background(255);
 }
 
@@ -13,8 +13,8 @@ void draw(){
   
   ellipse(x,y,random(420),random(420) );
   
-  x=x+random(-10,10);
-  y=y+random(-10,10);
+  x=x+random(-20,20);
+  y=y+random(-20,20);
   if (x > 1000){
     x = 500;
   }
