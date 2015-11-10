@@ -28,7 +28,29 @@ void draw() {
   if (x < 0) {
     x = 500;
   }
+    stroke(random(255), random (255), random (255));
+  line(x, y, random(50), random(50));
+  x=x+random(-30, 30);
+  y=y+random(-30, 30);
+  if (x > 1000) {
+    x = 500;
+  }
+  if (y > 1000) {
+    y = 500;
+  }
+
+  if (y < 0) {
+    y = 500;
+  }
+
+  if (x < 0) {
+    x = 500;
+  }
 }
+
+  
+  
+
 
 void keyPressed() {
   saveFrame("output-########.png");
