@@ -9,26 +9,13 @@ void setup() {
 }
 void draw() {
   noStroke();
-  fill(random(255), random(255), random(255));
+  fill(random(255), random(255), random(255)); //creating random coloring for the circles 
 
-  ellipse(x, y, random(420), random(420) );
+  ellipse(x, y, random(420), random(420) ); // creating the random circles 
 
-  x=x+random(-30, 30);
+  x=x+random(-30, 30); //Dictating space between the each circle 
   y=y+random(-30, 30);
-  if (x > 1000) {
-    x = 500;
-  }
-  if (y > 1000) {
-    y = 500;
-  }
-
-  if (y < 0) {
-    y = 500;
-  }
-
-  if (x < 0) {
-    x = 500;
-  }
+ 
 
   stroke(random(255), random (255), random (255));// set random color 
   line(x, y, random(50), random(50)); //code for creating random lines  from left side 
@@ -75,10 +62,6 @@ void draw() {
   }
 }
 
-
-
-
-
-void keyPressed() {
+void keyPressed() { // making code for screen shots to take a pic of the designs
   saveFrame("output-########.png");
 }
